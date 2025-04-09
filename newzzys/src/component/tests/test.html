@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input className="checkbox" type="checkbox" role="switch" id="checkbox" />
+        <label className="checkbok-label" htmlFor="checkbox">
+            <i className="fas fa-moon"></i>
+            <i className="fas fa-sun"></i>
+            <span className="ball"></span>
+        </label>
+    </div>
+    <script>
+        const checkbok = document.getElementById("checkbok");
+        checkbok.addEventListener("change", () => {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+</body>
+
+</html>

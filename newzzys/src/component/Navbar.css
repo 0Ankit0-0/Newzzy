@@ -1,0 +1,103 @@
+.navbar {
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.fa-newspaper {
+    margin-right: 0.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #9000ff;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.fa-sun,
+.fa-moon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.navbar.bg-dark {
+    background-color: #343a40 !important;
+    border-bottom-color: #fff !important;
+}
+
+.navbar.bg-dark .navbar-brand {
+    color: white;
+}
+
+.navbar.bg-dark .nav-link {
+    color: white !important;
+}
+
+.navbar.bg-dark .nav-link.active {
+    color: #007bff !important;
+}
+
+.navbar.bg-dark .dropdown-menu {
+    background-color: #212529;
+    border-color: #444;
+}
+
+.navbar.bg-dark .dropdown-item {
+    color: #f8f9fa;
+}
+
+.navbar.bg-dark .dropdown-item:hover {
+    background-color: #343a40;
+    color: #007bff;
+}
+
+.navbar.bg-dark .logout-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.navbar.bg-dark .logout-button:hover {
+    background-color: #c82333;
+}
+
+.navbar.bg-dark .form-check-label {
+    color: white;
+}
