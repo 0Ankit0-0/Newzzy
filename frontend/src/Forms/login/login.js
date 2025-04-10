@@ -23,7 +23,7 @@ const LoginForm = ({ mode }) => {
 
         try {
             const response = await axios.post(
-                "https://newzzy-apii.vercel.app/api/auth/login",
+                "https://localhost:5001/api/auth/login",
                 credentials
             );
 
