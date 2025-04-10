@@ -30,7 +30,7 @@ export class Home extends Component {
         const { pageSize } = this.props;
         const { page } = this.state;
 
-        const url = `https://localhost:5001/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
+        const url = `https://newzzy.vercel.app/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
 
         this.setState({ loading: true });
 
