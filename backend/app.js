@@ -39,7 +39,7 @@ app.get("/api/news", newsLimiter, async (req, res) => {
   } = req.query;
   const apiKey = process.env.NEWS_API_KEY;
 
-  const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page}&pageSize=${pageSize}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}&apiKey=${apiKey}`;
 
   try {
     const response = await axios.get(url);
