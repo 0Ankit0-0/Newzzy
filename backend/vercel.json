@@ -1,1 +1,13 @@
+{
+  "version": 2,
+  "build":[
+    {"src": "*.js", "use": "@vercel/mode"}
+  ],
+  "routes":[
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
 
