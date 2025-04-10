@@ -9,13 +9,10 @@ const app = express();
 app.use(express.json());
 
 
-app.use(
-  cors({
-    origin: ["https://newzzy-app.vercel.app/"],
-    methods: ["POST", 'GET'],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: 'https://newzzy-app.vercel.app',
+  credentials: true
+}));
 
 // === Routes ===
 app.use("/api/auth", require("./routes/authRoute"));
