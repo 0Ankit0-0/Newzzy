@@ -36,7 +36,7 @@ export class News extends Component {
 
         try {
             this.setState({ loading: true });
-            const url = `https://newzzy-apii.vercel.app/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
+            const url = `http://localhost:5001/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
             const data = await fetch(url);
             const parsedData = await data.json();
             if (parsedData && Array.isArray(parsedData.articles)) {
