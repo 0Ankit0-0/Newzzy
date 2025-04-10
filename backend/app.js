@@ -8,12 +8,12 @@ const app = express();
 
 app.use(express.json());
 
-
-app.use(cors({
-  origin: 'https://newzzy-app.vercel.app',
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 // === Routes ===
 app.use("/api/auth", require("./routes/authRoute"));
@@ -40,16 +40,16 @@ app.get("/api/news", newsLimiter, async (req, res) => {
   } = req.query;
   const apiKey = process.env.NEWS_API_KEY;
 
-  const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}&apiKey=${apiKey}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page}&pageSize=${pageSize}`;
 
   try {
     const response = await axios.get(url);
     res.json(response.data);
   } catch (error) {
     console.error("News API error:", error.message);
-    res
-      .status(error.response?.status || 500)
-      .json({ message: error.response?.data?.message || "Internal Server Error" });
+    res.status(error.response?.status || 500).json({
+      message: error.response?.data?.message || "Internal Server Error",
+    });
   }
 });
 
