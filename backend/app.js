@@ -8,22 +8,11 @@ const app = express();
 
 app.use(express.json());
 
-const allowedOrigins = [
-    "https://probable-spork-v6xq79g69xpfpx5g-3000.app.github.dev", // frontend
-    "https://probable-spork-v6xq79g69xpfpx5g-5000.app.github.dev", // backend (add if needed)
-    "http://localhost:3000"
-  ];
-  
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: [],
+    methods: ["POST", 'GET'],
     credentials: true,
   })
 );
