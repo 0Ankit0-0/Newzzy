@@ -23,7 +23,7 @@ const LoginForm = ({ mode }) => {
 
         try {
             const response = await axios.post(
-                "https://localhost:5001/api/auth/login",
+                "https://newzzy-1.onrender.com/api/auth/login",
                 credentials
             );
 
