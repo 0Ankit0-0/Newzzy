@@ -12,5 +12,8 @@
     "node-fetch": "^3.3.2",
     "socket": "^0.14.81",
     "websocket": "^1.0.35"
+  },
+  "scripts": {
+    "vercel-build": "echo 'No build necessary for backend'"
   }
 }
