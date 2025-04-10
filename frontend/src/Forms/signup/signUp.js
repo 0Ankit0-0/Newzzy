@@ -69,7 +69,7 @@ const SignUpForm = ({ mode }) => { // Receive 'mode' as a prop
 
         if (validateForm()) {
             try {
-                await axios.post("https://probable-spork-v6xq79g69xpfpx5g-5001.app.github.dev/api/auth/signup", {
+                await axios.post("https://localhost:5001/api/auth/signup", {
                     username: formData.username,
                     email: formData.email,
                     password: formData.password,
