@@ -31,7 +31,7 @@ const LoginForm = ({ mode }) => {
                 toast.success("Login successful!", { autoClose: 2000 });
 
                 setTimeout(() => {
-                    navigate("/home");
+                    navigate("/");
                 }, 2000);
             } else {
                 toast.error("Invalid username or password");
