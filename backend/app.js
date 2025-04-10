@@ -11,6 +11,7 @@ app.use(express.json());
 
 app.use(cors({
   origin: 'https://newzzy-app.vercel.app',
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
