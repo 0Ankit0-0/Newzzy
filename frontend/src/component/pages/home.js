@@ -34,7 +34,7 @@ export class Home extends Component {
     const { pageSize, country, category } = this.props;
     const { page } = this.state;
 
-    const url = `http://localhost:5001/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
+    const url = `https://newzzy-1.onrender.com/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
 
     this.setState({ loading: true });
 
