@@ -23,7 +23,7 @@ const LoginForm = ({ mode }) => {
 
         try {
             const response = await axios.post(
-                "https://probable-spork-v6xq79g69xpfpx5g-5001.app.github.dev/api/auth/login",
+                "https://localhost:5001/api/auth/login",
                 credentials
             );
 
