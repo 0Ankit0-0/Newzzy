@@ -70,7 +70,7 @@ const SignUpForm = ({ mode }) => {
 
     if (validateForm()) {
       try {
-        await axios.post("https://localhost:5001/api/auth/signup", {
+        await axios.post("https://newzzy-1.onrender.com/api/auth/signup", {
           username: formData.username,
           email: formData.email,
           password: formData.password,
