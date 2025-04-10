@@ -30,7 +30,7 @@ export class Home extends Component {
         const { pageSize } = this.props;
         const { page } = this.state;
 
-        const url = `https://probable-spork-v6xq79g69xpfpx5g-5001.app.github.dev/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
+        const url = `https://localhost:5001/api/news?country=${country}&category=${category}&page=${page}&pageSize=${pageSize}`;
 
         this.setState({ loading: true });
 
