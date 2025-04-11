@@ -66,8 +66,7 @@ const Navbar = (props) => {
                                 Contact
                             </Link>
                         </li>
-                        .{" "}
-                        <li className="nav-item dropdown">
+                                               <li className="nav-item dropdown">
                             <Link
                                 className={`nav-link dropdown-toggle text-${props.mode === "dark" ? "light" : "dark"
                                     }`}
