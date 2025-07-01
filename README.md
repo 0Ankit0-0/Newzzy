@@ -77,7 +77,7 @@ Newzzy/
 
 ## Seccreenshots
 
-[![Newszzy Homepage](./screenshots/homepage.png)](https://newzzy.vercel.app/)
+[![Newszzy Homepage](./Homepage.png)](https://newzzy.vercel.app/)
 
 ##Website Link
 
