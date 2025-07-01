@@ -75,6 +75,16 @@ Newzzy/
 └── README.md
 ```
 
+## Seccreenshots
+
+[![Newszzy Homepage](./screenshots/homepage.png)](https://newzzy.vercel.app/)
+
+##Website Link
+
+[Visit Newszzy Live](https://newzzy.vercel.app/)
+
+Newzzy is a news aggregation and delivery platform...
+
 ## Security Notice
 
 **Do not commit sensitive information like API keys, database URIs, or JWT secrets to public repositories.** Always use environment variables and `.env` files, and add `.env` to your `.gitignore`.
